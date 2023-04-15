@@ -6,7 +6,9 @@ const Newhome = () => {
         userfirstname: "",
         userlastname: "",
         email: "",
-        phone: ""
+        phone: "",
+        city: "",
+        address: ""
     });
 
     const handleInput = (e) => {
