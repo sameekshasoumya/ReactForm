@@ -52,12 +52,8 @@ const Newhome = () => {
 
                 <div class="form-wrap select-box">
                     <div class="form-item">
-                        <label>City</label>
-                        <select name="country">
-                            <option>Dhanbad</option>
-                            <option>Ranchi</option>
-                            <option>Bokaro</option>
-                        </select>
+                        <label htmlFor="city">City</label>
+                        <input type="text" value={userInput.city} onChange={handleInput} name="city" id="city" required/>
                     </div>
 
                     <div class="form-item">
@@ -72,16 +68,12 @@ const Newhome = () => {
                     </div>
                 </div>
 
-                <div class="form-wrap select-box">
-                    <div class="form-item2">
-                        <label>Select Address (update profile, to add a new address)</label>
-                        <select name="address">
-                            <option>B-37, New Rosaline Hostel, IIT ISM Dhanbad, Dhanbad, Jharkhand</option>
-                            <option>Saraidhella, Dhanbad, Jharkhand</option>
-                        </select>
+                <div class="form-wrap">
+                    <div class="form-item">
+                        <label htmlFor="address">Address</label>
+                        <input type="text" value={userInput.address} onChange={handleInput} name="address" id="address" required/>
                     </div>
                 </div>
-                <br/>
 
                 <div class="form-wrap select-box">
                     <div class="form-item2">
